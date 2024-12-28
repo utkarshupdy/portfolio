@@ -1,0 +1,88 @@
+/********************** Footer **********************/
+
+.footer {
+    background: var(--white);
+    border-top: 3px solid #f1f1f1ee;
+    box-shadow: var(--box-shadow);
+    padding: 2rem 8% ;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-footer .copyright{
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+#text {
+    font-family: 'Arial', sans-serif; /* Modern font */
+    font-size: 16px; /* Adjust font size for readability */
+    font-weight: 400; /* Regular weight for balance */
+    color: #ede3e3ff; /* Bright color for the text */
+    text-align: center; /* Center-align the text */
+    letter-spacing: 0.5px; /* Slightly increased letter spacing */
+    margin-top: 20px; /* Margin to separate from other elements */
+    margin-bottom: 20px; /* Margin to add spacing at the bottom */
+}
+
+#text p {
+    margin: 0; /* Remove default margin for better alignment */
+}
+
+#text p:first-child {
+    font-size: 14px; /* Slightly smaller font for the "Page created by" line */
+}
+
+.redes-sociales a {
+    color: #e10926; /* Matching color for social icons */
+    font-size: 24px; /* Icon size */
+    margin: 0 15px; /* Spacing between icons */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition effect */
+}
+
+.redes-sociales a:hover {
+    color: #ff5c8d; /* Lighter pink color on hover */
+    transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+.redes-sociales i {
+    transition: transform 0.3s ease; /* Smooth transform effect for icons */
+}
+
+.redes-sociales a:hover i {
+    transform: rotate(20deg); /* Rotate icons slightly on hover */
+}
+
+
+.redes-sociales{
+    padding: 2rem 0;
+}
+
+.redes-sociales a{
+    font-size: 3rem;
+    padding-left: 4rem;
+    color: var(--black);
+}
+
+.titulo .redes-sociales a{
+    padding: 2rem;
+    color: var(--green);
+}
+
+@media (max-width: 570px) {
+    .footer{
+        padding: .4rem 5% ;
+    }
+
+    .site-footer .copyright p{
+        font-size: 1.2rem;
+    }
+
+    .site-footer .redes-sociales a{
+        font-size: 2.5rem;
+        padding-left: 2rem;
+        color: var(--black);
+    }
+}

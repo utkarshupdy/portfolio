@@ -1,0 +1,71 @@
+/********************** Servicios **********************/
+.servicios .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four cards per row */
+    gap: 20px; /* Space between the cards */
+    text-align: center;
+    margin: 0 auto; /* Center the grid */
+}
+
+.servicios .row .columns {
+    box-shadow: var(--box-shadow);
+    border: var(--borde);
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for cards */
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px; /* Adjust the height of the cards */
+}
+
+.servicios .row .columns:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hover effect */
+    background-color: #f4f4f4; /* Light background on hover */
+}
+
+.servicios .row .columns img {
+    max-width: 100%;
+    height: 150px; /* Set a fixed height for the images */
+    object-fit: contain; /* Ensure the image is not distorted */
+    border-radius: 10px;
+    margin-bottom: 15px; /* Space below the image */
+}
+
+.servicios .row .columns h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--black); /* Heading color */
+}
+
+.servicios .row .columns .card-footer {
+    margin-top: auto; /* Push the button to the bottom of the card */
+}
+
+.servicios .row .columns .card-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.servicios .row .columns .card-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/********************** Responsive Design for Mobile **********************/
+@media (max-width: 768px) {
+    .servicios .row {
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row on smaller screens */
+    }
+
+    .servicios .row .columns {
+        height: auto; /* Adjust height for smaller screens */
+        margin: 10px; /* Reduce margin on smaller screens */
+    }
+
+    .servicios .row .columns img {
+        height: 120px; /* Smaller images for mobile */
+    }
+}
