@@ -48,7 +48,7 @@ const ProjectGame = () => {
                                 defaultMessage='websites'
                             />
                         </NavLink>
-                        <NavLink to="/project/app" offset={-150} duration={500}>
+                        {/* <NavLink to="/project/app" offset={-150} duration={500}>
                             Apps
                         </NavLink>
                         <NavLink to="/project/game" offset={-150} duration={500}>
@@ -56,7 +56,7 @@ const ProjectGame = () => {
                                 id='games'
                                 defaultMessage='games'
                             />
-                        </NavLink>
+                        </NavLink> */}
                     </nav>
                 </section>
 

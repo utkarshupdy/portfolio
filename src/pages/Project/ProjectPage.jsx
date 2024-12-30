@@ -57,7 +57,7 @@ const Project = () => {
                 defaultMessage='websites'
               />
             </NavLink>
-            <NavLink to="/project/app" offset={-150} duration={500}>
+            {/* <NavLink to="/project/app" offset={-150} duration={500}>
               Apps
             </NavLink>
             <NavLink to="/project/game" offset={-150} duration={500}>
@@ -65,79 +65,79 @@ const Project = () => {
                 id='games'
                 defaultMessage='games'
               />
-            </NavLink>
+            </NavLink> */}
           </nav>
         </section>
 
         <section className="projects__grid paginas-web">
           <div className="projects__item">
             <a onClick={() => cambiarEstadoModal17(!estadoModal17)}>
-              <img src={proyectsImg(`./proyecto-17.jpg`)} alt="" className="projects__img" />
+              <img src={proyectsImg(`./feedback.png`)} alt="" className="projects__img" />
             </a>
           </div>
           <div className="projects__item">
             <a onClick={() => cambiarEstadoModal14(!estadoModal14)}>
-              <img src={proyectsImg(`./proyecto-14.jpg`)} alt="" className="projects__img" />
+              <img src={proyectsImg(`./music.png`)} alt="" className="projects__img" />
             </a>
           </div>
           <div className="projects__item">
             <a onClick={() => cambiarEstadoModal15(!estadoModal15)}>
-              <img src={proyectsImg(`./proyecto-15.jpg`)} alt="" className="projects__img" />
+              <img src={proyectsImg(`./coal.png`)} alt="" className="projects__img" />
             </a>
           </div>
           <div className="projects__item">
             <a onClick={() => cambiarEstadoModal16(!estadoModal16)}>
-              <img src={proyectsImg(`./proyecto-16.jpg`)} className="projects__img" />
+              <img src={proyectsImg(`./park.png`)} className="projects__img" />
             </a>
           </div>
           <div className="projects__item">
             <a onClick={() => cambiarEstadoModal13(!estadoModal13)}>
-              <img src={proyectsImg(`./proyecto-13.jpg`)} alt="" className="projects__img" />
+              <img src={proyectsImg(`./videotube.png`)} alt="" className="projects__img" />
             </a>
           </div>
           <div className="projects__item">
             <a onClick={() => cambiarEstadoModal12(!estadoModal12)}>
-              <img src={proyectsImg(`./proyecto-12.jpg`)} alt="" className="projects__img" />
+              <img src={proyectsImg(`./blog.png`)} alt="" className="projects__img" />
             </a>
           </div>
           <div className="projects__item">
             <a onClick={() => cambiarEstadoModal11(!estadoModal11)}>
-              <img src={proyectsImg(`./proyecto-11.jpg`)} alt="" className="projects__img" />
+              <img src={proyectsImg(`./currency.png`)} alt="" className="projects__img" />
             </a>
           </div>
           <div className="projects__item">
             <a onClick={() => cambiarEstadoModal10(!estadoModal10)}>
-              <img src={proyectsImg(`./proyecto-10.jpg`)} alt="" className="projects__img" />
+              <img src={proyectsImg(`./todo.png`)} alt="" className="projects__img" />
             </a>
           </div>
           <div className="projects__item">
             <a onClick={() => cambiarEstadoModal9(!estadoModal9)}>
-              <img src={proyectsImg(`./proyecto-9.jpg`)} alt="" className="projects__img" />
+              <img src={proyectsImg(`./github.png`)} alt="" className="projects__img" />
             </a>
           </div>
           <div className="projects__item">
             <a onClick={() => cambiarEstadoModal8(!estadoModal8)}>
-              <img src={proyectsImg(`./proyecto-8.jpg`)} alt="" className="projects__img" />
+              <img src={proyectsImg(`./gym.png`)} alt="" className="projects__img" />
             </a>
           </div>
           <div className="projects__item">
             <a onClick={() => cambiarEstadoModal7(!estadoModal7)}>
-              <img src={proyectsImg(`./proyecto-7.jpg`)} alt="" className="projects__img" />
+              <img src={proyectsImg(`./pass.png`)} alt="" className="projects__img" />
             </a>
           </div>
           <div className="projects__item">
             <a onClick={() => cambiarEstadoModal6(!estadoModal6)}>
-              <img src={proyectsImg(`./proyecto-6.jpg`)} alt="" className="projects__img" />
+              <img src={proyectsImg(`./weather.png`)} alt="" className="projects__img" />
             </a>
           </div>
           <div className="projects__item">
             <a onClick={() => cambiarEstadoModal5(!estadoModal5)}>
-              <img src={proyectsImg(`./proyecto-5.jpg`)} alt="" className="projects__img" />
+              <img src={proyectsImg(`./stop.png`)} alt="" className="projects__img" />
             </a>
           </div>
           <div className="projects__item">
             <a onClick={() => cambiarEstadoModal3(!estadoModal3)}>
-              <img src={proyectsImg(`./proyecto-3.jpg`)} alt="" className="projects__img" />
+              <img src={proyectsImg(`./counter.png`)} alt="" className="projects__img" />
             </a>
           </div>
         </section>
@@ -149,22 +149,14 @@ const Project = () => {
       >
         <div className="content-modal">
           <div className="pw-content">
-            <div className="eins-modal-preview"><img src={proyectsImg(`./proyecto-17-com.png`)} alt="" /></div>
+            <div className="eins-modal-preview"><img src={proyectsImg(`./feedback.png`)} alt="" /></div>
             <div className="eins-modal-text">
-              <p>
-                <FormattedMessage
-                  id='projects-info-17-p1'
-                  defaultMessage='TatoFood, page created for the sale of fast food.'
-                />
-              </p>
-              <p>
-                <FormattedMessage
-                  id='projects-info-17-p2'
-                  defaultMessage='Designed to visually attract the user, with excellent quality culinary preparations and an interface with attractive transitions.'
-                />
-              </p>
+            <p>Created a feedback tool for 200+ users with Next.js, Gemini AI (85% accuracy), and MongoDB (10,000+ entries).</p>
+
+<p>Improved admin efficiency by 40%, scalability, and user satisfaction by 30%. Tech stack: Next.js, TypeScript, MongoDB, Node.js, Gemini AI, Resend, Vercel.</p>
+
               <div className="eins-modal-text-2">
-                <span>Link:</span> <a href="https://nahuel61920.github.io/TatoFood/" target="_blank">https://tato-food.com</a>
+                <span>Link:</span> <a href="https://feedback-application-sable.vercel.app/" target="_blank">Click here</a>
               </div>
               <div className="eins-modal-text-3">
                 <span>
@@ -174,11 +166,13 @@ const Project = () => {
                   />
                 </span>
                 <div className="eins-modal-tec">
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" alt="" />
-                </div>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="ReactJS" className="w-8 h-8" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg" alt="JavaScript" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-8 h-8" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-8 h-8" />
+</div>
+
+
               </div>
             </div>
           </div>
@@ -191,22 +185,13 @@ const Project = () => {
       >
         <div className="content-modal">
           <div className="pw-content">
-            <div className="eins-modal-preview"><img src={proyectsImg(`./proyecto-14-com.png`)} alt="" /></div>
+            <div className="eins-modal-preview"><img src={proyectsImg(`./music.png`)} alt="" /></div>
             <div className="eins-modal-text">
-              <p>
-                <FormattedMessage
-                  id='projects-info-14-p1'
-                  defaultMessage='Justice, page created for law firm.'
-                />
-              </p>
-              <p>
-                <FormattedMessage
-                  id='projects-info-14-p2'
-                  defaultMessage='Focused on showing the client the value, experience and professionalism of the lawyers they can hire, choosing the category of their specific case.'
-                />
-              </p>
+            <p>Skill Sphere offers a diverse range of courses in areas like web development, data science, and digital marketing.</p>
+<p>The platform emphasizes practical learning through interactive tools, quizzes, and real-world projects to enhance user skills.</p>
+
               <div className="eins-modal-text-2">
-                <span>Link:</span> <a href="https://nahuel61920.github.io/Justice" target="_blank">https://justice.com</a>
+                <span>Link:</span> <a href="https://skill-sphere-web.vercel.app/" target="_blank">Click Here</a>
               </div>
               <div className="eins-modal-text-3">
                 <span>
@@ -216,11 +201,11 @@ const Project = () => {
                   />
                 </span>
                 <div className="eins-modal-tec">
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" alt="" />
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="ReactJS" class="w-8 h-8" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" class="w-8 h-8" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-8 h-8" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-line.svg" alt="NextJS" class="w-8 h-8" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="ReactJS" class="w-8 h-8" />
                 </div>
               </div>
             </div>
@@ -234,22 +219,13 @@ const Project = () => {
       >
         <div className="content-modal">
           <div className="pw-content">
-            <div className="eins-modal-preview"><img src={proyectsImg(`./proyecto-15-com.png`)} alt="" /></div>
+            <div className="eins-modal-preview"><img src={proyectsImg(`./coal.png`)} alt="" /></div>
             <div className="eins-modal-text">
-              <p>
-                <FormattedMessage
-                  id='projects-info-15-p1'
-                  defaultMessage='Magical Effect is a portfolio created for a video development agency.'
-                />
-              </p>
-              <p>
-                <FormattedMessage
-                  id='projects-info-15-p2'
-                  defaultMessage='It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry.'
-                />
-              </p>
+            <p>A real-time theft detection system with 92% accuracy, integrating sensors and deploying a dashboard with live readings, human tracking .</p>
+<p>Enhanced security response by 85% through efficient authentication, secure data management, and streamlined operations.</p>
+
               <div className="eins-modal-text-2">
-                <span>Link:</span> <a href="https://nahuel61920.github.io/Magical-Effect/" target="_blank">https://magicaleffect.com</a>
+                <span>Link:</span> <a href="https://coal-theft-detection-model-1.onrender.com/" target="_blank">Click here</a>
               </div>
               <div className="eins-modal-text-3">
                 <span>
@@ -259,10 +235,12 @@ const Project = () => {
                   />
                 </span>
                 <div className="eins-modal-tec">
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" alt="" />
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="ReactJS" class="w-8 h-8" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-8 h-8" />
+  {/* <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-8 h-8" /> */}
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-8 h-8" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-8 h-8" />
+  
                 </div>
               </div>
             </div>
@@ -276,22 +254,13 @@ const Project = () => {
       >
         <div className="content-modal">
           <div className="pw-content">
-            <div className="eins-modal-preview"><img src={proyectsImg(`./proyecto-16-com.png`)} alt="" /></div>
+            <div className="eins-modal-preview"><img src={proyectsImg(`./park.png`)} alt="" /></div>
             <div className="eins-modal-text">
-              <p>
-                <FormattedMessage
-                  id='projects-info-16-p1'
-                  defaultMessage='Crystal Heart Store, is an online clothing store.'
-                />
-              </p>
-              <p>
-                <FormattedMessage
-                  id='projects-info-16-p2'
-                  defaultMessage='Designed so that the customer can search for products in a very fast and easy way, can calculate the shipment and pay online.'
-                />
-              </p>
+            <p>Built a Smart Car Parking System with user auth, role-based access, and real-time updates for enhanced security.</p>
+<p>Achieved 95% detection accuracy using YOLO and integrated Google Maps API for seamless navigation and parking lot selection.</p>
+
               <div className="eins-modal-text-2">
-                <span>Link:</span> <a href="https://crystalheart.empretienda.com.ar/" target="_blank">https://crystalheart.com</a>
+                <span>Link:</span> <a href="https://github.com/AdityaKumar-Git/ParkingManagement" target="_blank">Click here</a>
               </div>
               <div className="eins-modal-text-3">
                 <span>
@@ -301,10 +270,12 @@ const Project = () => {
                   />
                 </span>
                 <div className="eins-modal-tec">
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" alt="" />
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="ReactJS" class="w-8 h-8" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-8 h-8" />
+  {/* <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-8 h-8" /> */}
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-8 h-8" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-8 h-8" />
+  
                 </div>
               </div>
             </div>
@@ -318,22 +289,13 @@ const Project = () => {
       >
         <div className="content-modal">
           <div className="pw-content">
-            <div className="eins-modal-preview"><img src={proyectsImg(`./proyecto-13-com.png`)} alt="" /></div>
+            <div className="eins-modal-preview"><img src={proyectsImg(`./videotube.png`)} alt="" /></div>
             <div className="eins-modal-text">
-              <p>
-                <FormattedMessage
-                  id='projects-info-13-p1'
-                  defaultMessage='Inspired Gamer, page created for the sale of digital and physical video games.'
-                />
-              </p>
-              <p>
-                <FormattedMessage
-                  id='projects-info-13-p2'
-                  defaultMessage='Developed so that the client can choose their console, be it PSP 5 or Xbox X, and be able to browse exclusive pages for each console.'
-                />
-              </p>
+            <p>A backend for Stream-Flare VideoTube, focused on building robust server-side functionality for video streaming and user management.</p>
+<p>Implemented real-time data handling, optimized video storage, and ensured secure user authentication for a seamless streaming experience.</p>
+
               <div className="eins-modal-text-2">
-                <span>Link:</span> <a href="https://nahuel61920.github.io/InspiredGamer" target="_blank">https://inspired-gamer.com</a>
+                <span>Link:</span> <a href="https://github.com/utkarshupdy/Stream-Flare-VideoTube-Backend" target="_blank">Click here</a>
               </div>
               <div className="eins-modal-text-3">
                 <span>
@@ -343,10 +305,13 @@ const Project = () => {
                   />
                 </span>
                 <div className="eins-modal-tec">
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="" />
+                {/* <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="ReactJS" class="w-8 h-8" /> */}
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-8 h-8" />
+  {/* <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-8 h-8" /> */}
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-8 h-8" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-8 h-8" />
+  <img src="https://cdn.worldvectorlogo.com/logos/jwt-3.svg" alt="MongoDB" className="w-8 h-8" />
+  
                 </div>
               </div>
             </div>
@@ -360,22 +325,13 @@ const Project = () => {
       >
         <div className="content-modal">
           <div className="pw-content">
-            <div className="eins-modal-preview"><img src={proyectsImg(`./proyecto-12-com.png`)} alt="" /></div>
+            <div className="eins-modal-preview"><img src={proyectsImg(`./blog.png`)} alt="" /></div>
             <div className="eins-modal-text">
-              <p>
-                <FormattedMessage
-                  id='projects-info-12-p1'
-                  defaultMessage='Every Running, page developed for the sale of unisex shoes.'
-                />
-              </p>
-              <p>
-                <FormattedMessage
-                  id='projects-info-12-p2'
-                  defaultMessage='Designed so that the customer can choose the shoe model, see which one best suits their budget and which are the best valued by buyers.'
-                />
-              </p>
+            <p>Created a blog app with secure user authentication and CRUD functionality for posts, supporting multiple user roles.</p>
+<p>Built a responsive UI with React, integrating a Node.js backend for efficient content management and real-time updates.</p>
+
               <div className="eins-modal-text-2">
-                <span>Link:</span> <a href="https://nahuel61920.github.io/EveryRunning" target="_blank">https://every-running.com</a>
+                <span>Link:</span> <a href="https://github.com/utkarshupdy/Blog-Application" target="_blank">Click here</a>
               </div>
               <div className="eins-modal-text-3">
                 <span>
@@ -385,10 +341,13 @@ const Project = () => {
                   />
                 </span>
                 <div className="eins-modal-tec">
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="" />
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="ReactJS" class="w-8 h-8" />
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="Redux" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-8 h-8" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-8 h-8" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/appwrite/appwrite-original.svg" alt="Appwrite" />
+  
+  
                 </div>
               </div>
             </div>
@@ -402,22 +361,13 @@ const Project = () => {
       >
         <div className="content-modal">
           <div className="pw-content">
-            <div className="eins-modal-preview"><img src={proyectsImg(`./proyecto-11-com.png`)} alt="" /></div>
+            <div className="eins-modal-preview"><img src={proyectsImg(`./currency.png`)} alt="" /></div>
             <div className="eins-modal-text">
-              <p>
-                <FormattedMessage
-                  id='projects-info-11-p1'
-                  defaultMessage='Plus Anime, created to watch or download the anime chapters of your choice.'
-                />
-              </p>
-              <p>
-                <FormattedMessage
-                  id='projects-info-11-p2'
-                  defaultMessage='It has a wide variety of Anime, both recent releases and community favorites, it also boasts movies of the genre in question.'
-                />
-              </p>
+            <p>A real-time currency conversion app with live exchange rates for seamless transactions.</p>
+<p>Implemented dynamic currency swapping and a responsive UI using React and Tailwind CSS.</p>
+
               <div className="eins-modal-text-2">
-                <span>Link:</span> <a href="https://nahuel61920.github.io/PlusAnime" target="_blank">https://plusanime.com</a>
+                <span>Link:</span> <a href="https://currencyxchange-f31e.onrender.com/" target="_blank">Click here</a>
               </div>
               <div className="eins-modal-text-3">
                 <span>
@@ -427,10 +377,13 @@ const Project = () => {
                   />
                 </span>
                 <div className="eins-modal-tec">
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="" />
-                </div>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-8 h-8" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="Redux" />
+</div>
+
               </div>
             </div>
           </div>
@@ -443,22 +396,13 @@ const Project = () => {
       >
         <div className="content-modal">
           <div className="pw-content">
-            <div className="eins-modal-preview"><img src={proyectsImg(`./proyecto-10-com.png`)} alt="" /></div>
+            <div className="eins-modal-preview"><img src={proyectsImg(`./todo.png`)} alt="" /></div>
             <div className="eins-modal-text">
-              <p>
-                <FormattedMessage
-                  id='projects-info-10-p1'
-                  defaultMessage='Elegant Hand, page created for the sale of digital and analog watches.'
-                />
-              </p>
-              <p>
-                <FormattedMessage
-                  id='projects-info-10-p2'
-                  defaultMessage='Developed so that the customer can choose the watch of their choice, since it has a wide variety of brands and models. The page also has a night mode for more comfort.'
-                />
-              </p>
+            <p>Built an advanced Todo app with task management features like adding, editing, and deleting tasks.</p>
+<p>Data is stored in local storage, ensuring persistence even after refresh or shutdown.</p>
+
               <div className="eins-modal-text-2">
-                <span>Link:</span> <a href="https://nahuel61920.github.io/ElegantHand/" target="_blank">https://elegant-hand.com</a>
+                <span>Link:</span> <a href="https://task-sphere-kappa.vercel.app/" target="_blank">Click here</a>
               </div>
               <div className="eins-modal-text-3">
                 <span>
@@ -468,10 +412,12 @@ const Project = () => {
                   />
                 </span>
                 <div className="eins-modal-tec">
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="" />
-                </div>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-8 h-8" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="Redux" />
+</div>
               </div>
             </div>
           </div>
@@ -484,22 +430,13 @@ const Project = () => {
       >
         <div className="content-modal">
           <div className="pw-content">
-            <div className="eins-modal-preview"><img src={proyectsImg(`./proyecto-9-com.png`)} alt="" /></div>
+            <div className="eins-modal-preview"><img src={proyectsImg(`./github.png`)} alt="" /></div>
             <div className="eins-modal-text">
-              <p>
-                <FormattedMessage
-                  id='projects-info-9-p1'
-                  defaultMessage='Life on paper, page created for a bookstore.'
-                />
-              </p>
-              <p>
-                <FormattedMessage
-                  id='projects-info-9-p2'
-                  defaultMessage='Designed so that the customer can purchase physical or digital books, it has a large number of categories so that its readers feel comfortable.'
-                />
-              </p>
+            <p>Fetches GitHub user details like name, repositories, followers, and more using the GitHub API.</p>
+<p>Displays user information with a user-friendly interface and redirects to the user's GitHub profile.</p>
+
               <div className="eins-modal-text-2">
-                <span>Link:</span> <a href="https://nahuel61920.github.io/vida-en-papel" target="_blank">https://vida-en-papel.com</a>
+                <span>Link:</span> <a href="https://gut-hub-profile-finder.vercel.app/" target="_blank">Click here</a>
               </div>
               <div className="eins-modal-text-3">
                 <span>
@@ -509,9 +446,12 @@ const Project = () => {
                   />
                 </span>
                 <div className="eins-modal-tec">
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="" />
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" />
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS" />
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-8 h-8" />
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript" />
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="GitHub" />
+
                 </div>
               </div>
             </div>
@@ -525,22 +465,13 @@ const Project = () => {
       >
         <div className="content-modal">
           <div className="pw-content">
-            <div className="eins-modal-preview"><img src={proyectsImg(`./proyecto-8-com.png`)} alt="" /></div>
+            <div className="eins-modal-preview"><img src={proyectsImg(`./gym.png`)} alt="" /></div>
             <div className="eins-modal-text">
-              <p>
-                <FormattedMessage
-                  id='projects-info-8-p1'
-                  defaultMessage='Shop Tec, is an ecommerce developed for the purchase of technological products.'
-                />
-              </p>
-              <p>
-                <FormattedMessage
-                  id='projects-info-8-p2'
-                  defaultMessage='It offers a large number of products, as well as the ability to navigate between the different categories of such products.'
-                />
-              </p>
+            <p>A responsive gym website featuring interactive elements and custom fonts to enhance user experience.</p>
+<p>Includes a well-structured layout with HTML, CSS, and JavaScript for easy navigation and usage.</p>
+
               <div className="eins-modal-text-2">
-                <span>Link:</span> <a href="https://nahuel61920.github.io/shop-tec" target="_blank">https://shop-tec.com</a>
+                <span>Link:</span> <a href="https://fit-track-pro-website.vercel.app/" target="_blank">Click here</a>
               </div>
               <div className="eins-modal-text-3">
                 <span>
@@ -550,11 +481,13 @@ const Project = () => {
                   />
                 </span>
                 <div className="eins-modal-tec">
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="" />
-                </div>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg" alt="jQuery" />
+  <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-map-icon.png" alt="Google Maps API" />
+</div>
+
               </div>
             </div>
           </div>
@@ -567,22 +500,13 @@ const Project = () => {
       >
         <div className="content-modal">
           <div className="pw-content">
-            <div className="eins-modal-preview"><img src={proyectsImg(`./proyecto-7-com.png`)} alt="" /></div>
+            <div className="eins-modal-preview"><img src={proyectsImg(`./pass.png`)} alt="" /></div>
             <div className="eins-modal-text">
-              <p>
-                <FormattedMessage
-                  id='projects-info-7-p1'
-                  defaultMessage='Power engine, is a car sales website.'
-                />
-              </p>
-              <p>
-                <FormattedMessage
-                  id='projects-info-7-p2'
-                  defaultMessage='Developed so that the customer can purchase the car of their dreams, it uses a slider system in many of its sections to facilitate the interaction of the page with users.'
-                />
-              </p>
+            <p>Built a password generator app with customizable length and options for lowercase, uppercase, numbers, and special characters.</p>
+{/* <p>Integrated clipboard copy functionality using React, Redux, and Tailwind CSS for a sleek user experience.</p> */}
+<p>Utilized a secure password generation algorithm to ensure strong and unique passwords.</p>
               <div className="eins-modal-text-2">
-                <span>Link:</span> <a href="https://nahuel61920.github.io/Power-Engine" target="_blank">https://power-engine.com</a>
+                <span>Link:</span> <a href="https://wonderful-puffpuff-4d107f.netlify.app/" target="_blank">Click here</a>
               </div>
               <div className="eins-modal-text-3">
                 <span>
@@ -592,38 +516,31 @@ const Project = () => {
                   />
                 </span>
                 <div className="eins-modal-tec">
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="" />
-                </div>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="Redux" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" />
+</div>
+
               </div>
             </div>
           </div>
         </div>
       </Modal>
-
       <Modal
         estado={estadoModal6}
         cambiarEstado={cambiarEstadoModal6}
       >
         <div className="content-modal">
           <div className="pw-content">
-            <div className="eins-modal-preview"><img src={proyectsImg(`./proyecto-6-com.png`)} alt="" /></div>
+            <div className="eins-modal-preview"><img src={proyectsImg(`./weather.png`)} alt="" /></div>
             <div className="eins-modal-text">
-              <p>
-                <FormattedMessage
-                  id='projects-info-6-p1'
-                  defaultMessage='Spider-Man fan page, is a project developed in honor of Spider-Man.'
-                />
-              </p>
-              <p>
-                <FormattedMessage
-                  id='projects-info-6-p2'
-                  defaultMessage='It offers a wide variety of information about Spider-Man and his multi-verse variants, as well as facts and trivia about his enemies and allies.'
-                />
-              </p>
+            <p>WeatherPulse provides real-time weather updates with accurate temperature, humidity, and forecasts. Get quick weather insights with live data.</p>
+<p>Fetches data from a weather API to deliver reliable weather info and displays current date and time for users worldwide.</p>
+
               <div className="eins-modal-text-2">
-                <span>Link:</span> <a href="https://nahuel61920.github.io/Spider-Man" target="_blank">https://spider-man-fans-page.com</a>
+                <span>Link:</span> <a href="https://weather-app-zeta-three-80.vercel.app/" target="_blank">Click here</a>
               </div>
               <div className="eins-modal-text-3">
                 <span>
@@ -633,39 +550,33 @@ const Project = () => {
                   />
                 </span>
                 <div className="eins-modal-tec">
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="" />
-                </div>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-plain.svg" alt="jQuery" />
+  <img src="https://www.svgrepo.com/show/502423/weather.svg" alt="Weather" />
+</div>
+
+
               </div>
             </div>
           </div>
         </div>
       </Modal>
-
       <Modal
         estado={estadoModal5}
         cambiarEstado={cambiarEstadoModal5}
       >
         <div className="content-modal">
           <div className="pw-content">
-            <div className="eins-modal-preview"><img src={proyectsImg(`./proyecto-5-com.png`)} alt="" /></div>
+            <div className="eins-modal-preview"><img src={proyectsImg(`./stop.png`)} alt="" /></div>
             <div className="eins-modal-text">
-              <p>
-                <FormattedMessage
-                  id='projects-info-5-p1'
-                  defaultMessage='PremierFood, page created for the sale of fast food.'
-                />
-              </p>
-              <p>
-                <FormattedMessage
-                  id='projects-info-5-p2'
-                  defaultMessage='Designed to visually attract the user, with excellent quality culinary preparations and an interface with attractive transitions.'
-                />
-              </p>
+            <p>Developed a manual stopwatch using HTML, CSS, and JavaScript, allowing users to start, stop, and reset the timer.</p>
+<p>The app provides an intuitive interface for time tracking, with real-time updates and simple functionality.</p>
+
+
               <div className="eins-modal-text-2">
-                <span>Link:</span> <a href="https://nahuel61920.github.io/PremierFood" target="_blank">https://premierfood.com</a>
+                <span>Link:</span> <a href="https://manual-stop-watch.vercel.app/" target="_blank">Click here</a>
               </div>
               <div className="eins-modal-text-3">
                 <span>
@@ -675,40 +586,32 @@ const Project = () => {
                   />
                 </span>
                 <div className="eins-modal-tec">
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="" />
-                </div>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-plain.svg" alt="jQuery" />
+</div>
+
+
               </div>
             </div>
           </div>
         </div>
       </Modal>
-
       <Modal
         estado={estadoModal3}
         cambiarEstado={cambiarEstadoModal3}
       >
         <div className="content-modal">
           <div className="pw-content">
-            <div className="eins-modal-preview"><img src={proyectsImg(`./proyecto-3.jpg`)} alt="" /></div>
+            <div className="eins-modal-preview"><img src={proyectsImg(`./counter.png`)} alt="" /></div>
             <div className="eins-modal-text">
-              <p>
-                <FormattedMessage
-                  id='projects-info-3-p1'
-                  defaultMessage='ProgramCoffe, a blog designed to inform about the best recipes for your coffee.'
-                />
-              </p>
-              <p>
-                <FormattedMessage
-                  id='projects-info-3-p2'
-                  defaultMessage='It offers a large amount of information on the perfect preparations for a good coffee, as well as the temperature at which it must be prepared, as well as the best coffee beans.'
-                />
-              </p>
+            <p>Created a reverse countdown timer using HTML, CSS, and JavaScript that helps track a deadline by asking for the target date, month, and year.</p>
+<p>The timer updates in real-time, counting down to the specified deadline, aiding users in managing their time effectively.</p>
+
+
               <div className="eins-modal-text-2">
-                <span>Link:</span> <a href="https://nahuel61920.github.io/Blog-Coffe" target="_blank">https://ProgramCoffe.com</a>
+                <span>Link:</span> <a href="https://counter-time-lac.vercel.app/" target="_blank">Click here</a>
               </div>
               <div className="eins-modal-text-3">
                 <span>
@@ -718,9 +621,13 @@ const Project = () => {
                   />
                 </span>
                 <div className="eins-modal-tec">
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" />
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" />
-                </div>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-plain.svg" alt="jQuery" />
+</div>
+
+
               </div>
             </div>
           </div>

@@ -50,231 +50,281 @@ const Project = () => {
                 >
                     <SwiperSlide className='caja'>
                         <img
-                            src={proyectImg(`./proyecto-app-18.png`)}
+                            src={proyectImg(`./feedback.png`)}
                             alt='proyectos'
 
                         />
                         <div className="content">
-                            <h3>CoinPlus</h3>
+                            <h3>Feedback Application</h3>
                             <p>
-                                Trading platform for cryptocurrencies
+                            Give Feedback and Remain Anonymous
                             </p>
                             <p className="tecnologias">
                                 React
-                                <span> -</span> CSS
-                                <span> -</span> Redux
-                                <span> -</span> Bootstrap
+                                <span> -</span> NextJs
                                 <span> -</span> TypeScript
-                                <span> -</span> Solidity
-                                <span> -</span> NodeJS
+                                <span> -</span> Shadcn UI
+                                <span> -</span> Tailwind CSS
+                                <span> -</span> NodeJs
                                 <span> -</span> MongoDB
+                                <span> -</span> Gemini API
                             </p>
-                            <a href="https://coin-plus.vercel.app/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
-                            <a href="https://github.com/Nahuel61920/CoinPlus" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
+                            <a href="https://feedback-application-sable.vercel.app/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
+                            <a href="https://github.com/utkarshupdy/Feedback-Application" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className='caja'>
                         <img
-                            src={proyectImg(`./proyecto-14.jpg`)}
+                            src={proyectImg(`./music.png`)}
                             alt='proyectos'
 
                         />
                         <div className="content">
-                            <h3>Justice</h3>
+                            <h3>SkillSphere</h3>
                             <p>
-                                lawyers website
+                            Empowering You with Software Mastery
+                            </p>
+                            <p className="tecnologias">
+                                HTML5
+                                <span> -</span> NextJS
+                                <span> -</span> TypeScript
+                                <span> -</span> Tailwind CSS
+                                <span> -</span> Accertinity UI
+                                <span> -</span> Redux
+                            </p>
+                            <a href="https://skill-sphere-web.vercel.app/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
+                            <a href="https://github.com/utkarshupdy/SkillSphere" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='caja'>
+                        <img
+                            src={proyectImg(`./coal.png`)}
+                            alt='proyectos'
+
+                        />
+                        <div className="content">
+                            <h3>LoadShield</h3>
+                            <p>
+                                Real Time Load Balancing and Monitoring
+                            </p>
+                            <p className="tecnologias">
+                                React
+                                <span> -</span> ReactJS
+                                <span> -</span> ChartJS
+                                <span> -</span> Redux
+                                <span> -</span> NodeJS
+                                <span> -</span> ExpressJS
+                                <span> -</span> MongoDB
+                                <span> -</span> Socket.IO
+                            </p>
+                            <a href="https://coal-theft-detection-model-1.onrender.com/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
+                            <a href="https://github.com/utkarshupdy/Coal_Theft_Detection_Model" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='caja'>
+                        <img
+                            src={proyectImg(`./park.png`)}
+                            alt='proyectos'
+                        />
+                        <div className="content">
+                            <h3>ParkSmart</h3>
+                            <p>
+                            Revolutionizing Parking with Smart Tech
+                            </p>
+                            <p className="tecnologias">
+                            ReactJS
+                                <span> -</span> ChartJS
+                                <span> -</span> Redux
+                                <span> -</span> NodeJS
+                                <span> -</span> ExpressJS
+                                <span> -</span> MongoDB
+                                <span> -</span> Google Map API
+                                <span> -</span> YOLO
+                                <span> -</span> Firebase
+                            </p>
+                            <a href="https://github.com/AdityaKumar-Git/ParkingManagement" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
+                            <a href="https://github.com/AdityaKumar-Git/ParkingManagement" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='caja'>
+                        <img
+                            src={proyectImg(`./videotube.png`)}
+                            alt='proyectos'
+                        />
+                        <div className="content">
+                            <h3>StreamFlare</h3>
+                            <p>
+                            Igniting Your Video Streaming Experience
+                            </p>
+                            <p className="tecnologias">
+                                <span></span> JavaScript
+                                <span> -</span> NodeJS
+                                <span> -</span> ExpressJS
+                                <span> -</span> MongoDB
+                                <span> -</span> JWT
+                                <span> -</span> Multer
+                            </p>
+                            <a href="https://github.com/utkarshupdy/Stream-Flare-VideoTube-Backend" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
+                            <a href="https://github.com/utkarshupdy/Stream-Flare-VideoTube-Backend" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='caja'>
+                        <img
+                            src={proyectImg(`./blog.png`)}
+                            alt='proyectos'
+                        />
+                        <div className="content">
+                            <h3>WriteSphere</h3>
+                            <p>
+                            Your World of Stories, Shared and Discovered
+                            </p>
+                            <p className="tecnologias">
+                                
+                                <span> </span> JavaScript
+                                <span> -</span> ReactJS
+                                <span> -</span> Redux
+                                <span> -</span> Tailwind CSS
+                                <span> -</span> Tinymce React
+                                <span> -</span> Appwrite
+                            </p>
+                            <a href="https://github.com/utkarshupdy/Blog-Application" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
+                            <a href="https://github.com/utkarshupdy/Blog-Application" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='caja'>
+                        <img
+                            src={proyectImg(`./currency.png`)}
+                            alt='proyectos'
+                        />
+                        <div className="content">
+                            <h3>CurrencyXChange</h3>
+                            <p>
+                            Your Trusted Partner for Smart Currency Conversions
+                            </p>
+                            <p className="tecnologias">
+                        
+                                <span> -</span> JavaScript
+                                <span> -</span> ReactJS
+                                <span> -</span> Redux
+                                <span> -</span> React Router DOM
+                                <span> -</span> Currency API
+                                <span> -</span> Tailwind CSS
+                            </p>
+                            <a href="https://currencyxchange-f31e.onrender.com/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
+                            <a href="https://github.com/utkarshupdy/CurrencyXChange" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='caja'>
+                        <img
+                            src={proyectImg(`./todo.png`)}
+                            alt='proyectos'
+                        />
+                        <div className="content">
+                            <h3>Task-Sphere</h3>
+                            <p>
+                            Elevate Productivity, One Task at a Time
+                            </p>
+                            <p className="tecnologias">
+
+                                <span> </span> JavaScript
+                                <span> -</span> ReactJS
+                                <span> -</span> Context API
+                                <span> -</span> Redux
+                                <span> -</span> Tailwind CSS
+                            </p>
+                            <a href="https://task-sphere-kappa.vercel.app/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
+                            <a href="https://github.com/utkarshupdy/ReactJS/tree/main/10todocontext" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='caja'>
+                        <img
+                            src={proyectImg(`./github.png`)}
+                            alt='proyectos'
+                        />
+                        <div className="content">
+                            <h3>RepoRadar</h3>
+                            <p>
+                            Your Gateway to GitHub Profiles and Repositories
+                            </p>
+                            <p className="tecnologias">
+
+                                {/* <span> </span> CSS */}
+                                <span> </span> HTML5
+                                <span> -</span> Tailwind CSS
+                                <span> -</span> JavaScript
+                                <span> -</span> Github API
+                            </p>
+                            <a href="https://gut-hub-profile-finder.vercel.app/ " className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
+                            <a href="https://github.com/utkarshupdy/GutHub-Profile-Finder" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='caja'>
+                        <img
+                            src={proyectImg(`./gym.png`)}
+                            alt='proyectos'
+                        />
+                        <div className="content">
+                            <h3>GymHub</h3>
+                            <p>
+                            Your Personalized Fitness Journey Starts Here
                             </p>
                             <p className="tecnologias">
                                 HTML5
                                 <span> -</span> CSS
                                 <span> -</span> JavaScript
                                 <span> -</span> jQuery
-                                <span> -</span> Bootstrap
+                                <span> -</span> Google Map API
                             </p>
-                            <a href="https://nahuel61920.github.io/Justice/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
-                            <a href="https://github.com/Nahuel61920/Justice" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
+                            <a href="https://fit-track-pro-website.vercel.app/ " className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
+                            <a href="https://github.com/utkarshupdy/Fit-Track-Pro-Website" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className='caja'>
                         <img
-                            src={proyectImg(`./proyecto-app-17.png`)}
-                            alt='proyectos'
-
-                        />
-                        <div className="content">
-                            <h3>PI Dogs</h3>
-                            <p>
-                                Individual Project
-                            </p>
-                            <p className="tecnologias">
-                                React
-                                <span> -</span> CSS
-                                <span> -</span> Redux
-                                <span> -</span> NodeJS
-                                <span> -</span> ExpressJS
-                                <span> -</span> Sequelize
-                                <span> -</span> PostgreSQL
-                            </p>
-                            <a href="https://pi-dogs-main-ashy.vercel.app/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
-                            <a href="https://github.com/Nahuel61920/PI-DOGS-MAIN" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='caja'>
-                        <img
-                            src={proyectImg(`./proyecto-7.jpg`)}
+                            src={proyectImg(`./pass.png`)}
                             alt='proyectos'
                         />
                         <div className="content">
-                            <h3>Power Engine</h3>
+                            <h3>PassForge</h3>
                             <p>
-                                Automobiles Website
+                            Your Password, Reinvented for Ultimate Security
                             </p>
                             <p className="tecnologias">
                                 HTML5
                                 <span> -</span> CSS
                                 <span> -</span> JavaScript
+                                <span> -</span> ReactJS
+                                <span> -</span> Tailwind CSS
+                        
                             </p>
-                            <a href="https://nahuel61920.github.io/Power-Engine/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
-                            <a href="https://github.com/Nahuel61920/Power-Engine" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
+                            <a href="https://wonderful-puffpuff-4d107f.netlify.app/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
+                            <a href="https://github.com/utkarshupdy/Random-Password-Generator" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className='caja'>
                         <img
-                            src={proyectImg(`./proyecto-6.jpg`)}
+                            src={proyectImg(`./weather.png`)}
                             alt='proyectos'
                         />
                         <div className="content">
-                            <h3>Spider-Man fan page</h3>
+                            <h3>WeatherPulse</h3>
                             <p>
-                                Fan page Spider-Man
+                            Real-time weather updates at your fingertips, anytime, anywhere.
                             </p>
                             <p className="tecnologias">
                                 HTML5
                                 <span> -</span> CSS
                                 <span> -</span> JavaScript
-                                <span> -</span> Bootstrap
+                                <span> -</span> jQuery
+                                <span> -</span> Weather API
+                        
                             </p>
-                            <a href="https://nahuel61920.github.io/Spider-Man/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
-                            <a href="https://github.com/Nahuel61920/Spider-Man" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
+                            <a href="https://weather-app-zeta-three-80.vercel.app/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
+                            <a href="https://github.com/utkarshupdy/Weather-App" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide className='caja'>
-                        <img
-                            src={proyectImg(`./proyecto-12.jpg`)}
-                            alt='proyectos'
-                        />
-                        <div className="content">
-                            <h3>EveryRunnig</h3>
-                            <p>
-                                Website shoes
-                            </p>
-                            <p className="tecnologias">
-                                HTML5
-                                <span> -</span> CSS
-                                <span> -</span> JavaScript
-                                <span> -</span> Bootstrap
-                            </p>
-                            <a href="https://nahuel61920.github.io/EveryRunning/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
-                            <a href="https://github.com/Nahuel61920/EveryRunning" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='caja'>
-                        <img
-                            src={proyectImg(`./proyecto-5.jpg`)}
-                            alt='proyectos'
-                        />
-                        <div className="content">
-                            <h3>Premier Food</h3>
-                            <p>
-                                Fast food
-                            </p>
-                            <p className="tecnologias">
-                                HTML5
-                                <span> -</span> CSS
-                                <span> -</span> JavaScript
-                                <span> -</span> Sass
-                            </p>
-                            <a href="https://nahuel61920.github.io/PremierFood/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
-                            <a href="https://github.com/Nahuel61920/PremierFood" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='caja'>
-                        <img
-                            src={proyectImg(`./proyecto-8.jpg`)}
-                            alt='proyectos'
-                        />
-                        <div className="content">
-                            <h3>ShopTec</h3>
-                            <p>
-                                Ecommerce
-                            </p>
-                            <p className="tecnologias">
-                                HTML5
-                                <span> -</span> CSS
-                                <span> -</span> Sass
-                                <span> -</span> JavaScript
-                            </p>
-                            <a href="https://nahuel61920.github.io/shop-tec/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
-                            <a href="https://github.com/Nahuel61920/shop-tec" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='caja'>
-                        <img
-                            src={proyectImg(`./proyecto-10.jpg`)}
-                            alt='proyectos'
-                        />
-                        <div className="content">
-                            <h3>Elegant Hand</h3>
-                            <p>
-                                Watch Shop
-                            </p>
-                            <p className="tecnologias">
-                                HTML5
-                                <span> -</span> CSS
-                                <span> -</span> JavaScript
-                            </p>
-                            <a href="https://nahuel61920.github.io/ElegantHand/ " className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
-                            <a href="https://github.com/Nahuel61920/ElegantHand" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='caja'>
-                        <img
-                            src={proyectImg(`./proyecto-9.jpg`)}
-                            alt='proyectos'
-                        />
-                        <div className="content">
-                            <h3>Vida en papel</h3>
-                            <p>
-                                Bookstore
-                            </p>
-                            <p className="tecnologias">
-                                HTML5
-                                <span> -</span> CSS
-                                <span> -</span> JavaScript
-                            </p>
-                            <a href="https://nahuel61920.github.io/vida-en-papel/ " className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
-                            <a href="https://github.com/Nahuel61920/vida-en-papel" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='caja'>
-                        <img
-                            src={proyectImg(`./proyecto-11.jpg`)}
-                            alt='proyectos'
-                        />
-                        <div className="content">
-                            <h3>Plus Anime</h3>
-                            <p>
-                                Anime website
-                            </p>
-                            <p className="tecnologias">
-                                HTML5
-                                <span> -</span> CSS
-                                <span> -</span> JavaScript
-                            </p>
-                            <a href="https://nahuel61920.github.io/PlusAnime/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
-                            <a href="https://github.com/Nahuel61920/PlusAnime" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
-                        </div>
-                    </SwiperSlide>
+                    
+                    
                 </Swiper>
                 <div className="swiper-pagination"></div>
             </div>

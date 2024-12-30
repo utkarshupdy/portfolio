@@ -8,6 +8,7 @@ import { NavLink } from 'react-router-dom';
 
 /* DarkMode */
 import DarkMode from '../DarkMode/DarkMode';
+import img from './img.png'
 
 /* Language */
 import { FormattedMessage } from "react-intl";
@@ -31,13 +32,13 @@ const Header = () => {
     }
 
     return (
-        <header className="site-header">
+        <header className="site-header ">
             <div id="menu-btn" className="fas fa-bars" onClick={menuDesplegable}></div>
 
             <NavLink className="logo" to="/">
-                {/* <p>=(<span>UTKARSH</span>)=></p> */}
-                <p>{"<"}(<span>UTKARSH</span>){"/>"}</p>
-            </NavLink>
+    <img src={img} alt="Logo" style={{ width: "30px", height: "30px" }} />
+</NavLink>
+
 
             <nav className="navbar">
                 <Link to="inicio" spy={true} offset={-150} href="#inicio">
@@ -71,8 +72,7 @@ const Header = () => {
                     />
                 </Link>
                 <div id="buttons">
-                    <img onClick={() => idioma.selectLanguage('en-US')} src="https://nahuel61920.github.io/Portafoliovirtual/img/en.png" alt="EEUU" />
-                    {/* <img onClick={() => idioma.selectLanguage('es-ES')} src="https://nahuel61920.github.io/Portafoliovirtual/img/es.png" alt="España" /> */}
+                    
                 </div>
             </nav>
             <div className="switch" id="switch">
