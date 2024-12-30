@@ -83,7 +83,7 @@ const Service = () => {
           </div>
           <div className="card-footer text-center">
             <Link 
-              to="https://www.geeksforgeeks.org/author/utkarshupdy/" 
+              to="https://www.geeksforgeeks.org/user/utkarshupdy/" 
               target="_blank" 
               className="card-link text-blue-500 hover:text-blue-700"
             >
