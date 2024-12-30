@@ -17,7 +17,6 @@ body.dark .btn-codigo:hover {
   color: var(--black);
 }
 
-/********************** header **********************/
 
 body.dark .site-header {
   background: #111111;

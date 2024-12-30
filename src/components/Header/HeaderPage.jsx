@@ -10,11 +10,11 @@ import DarkMode from '../DarkMode/DarkMode';
 
 /* Language */
 import { FormattedMessage } from "react-intl";
-import { langContext } from '../../context/Context';
+// import { langContext } from '../../context/Context';
 
 const HeaderPage = () => {
     // Buttom language
-    const idioma = useContext(langContext);
+    // const idioma = useContext(langContext);
     // Menu desplegable
     const menuDesplegable = () => {
         let navbar = document.querySelector('.navbar');
@@ -49,12 +49,6 @@ const HeaderPage = () => {
                         defaultMessage='About me'
                     />
                 </NavLink>
-                {/* <NavLink to="servicios" spy={true} offset={-150} href="#servicios">
-                    <FormattedMessage
-                        id='services'
-                        defaultMessage='Services'
-                    />
-                </NavLink> */}
                 <NavLink to="/project" offset={-150} duration={500}>
                     <FormattedMessage
                         id='projects'

@@ -32,21 +32,18 @@ const About = () => (
                 <ul>
                     <li>
                         <p>
-                            <span>
-                                <FormattedMessage id="years" defaultMessage="Age:" />
-                            </span>
-                            21
+                        <span>Education: </span>
+                             National Institute of Technology Raipur
                         </p>
                     </li>
                     <li>
                         <p>
-                            <span>Hobbies: </span>
-                            Programming, Chess
+                        <span>Email:</span> ukupadhyay6789@gmail.com
                         </p>
                     </li>
                     <li>
                         <p>
-                            <span>Email:</span> ukupadhyay6789@gmail.com
+                            <span>Contact:</span> +91-7309466387
                         </p>
                     </li>
                     <li>

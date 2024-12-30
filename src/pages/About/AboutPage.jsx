@@ -55,7 +55,7 @@ const About = () => {
                   Hi, I'm Utkarsh Upadhyay, a student at the National Institute
                   of Technology Raipur, pursuing a B.Tech in Electrical
                   Engineering. I am deeply passionate about web development and
-                  programming. My journey began in 2020, where I started
+                  programming. My journey began in 2022, where I started
                   creating websites using HTML and CSS, igniting my interest in
                   crafting user-friendly and visually appealing web
                   applications.

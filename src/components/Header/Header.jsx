@@ -12,11 +12,11 @@ import img from './img.png'
 
 /* Language */
 import { FormattedMessage } from "react-intl";
-import { langContext } from '../../context/Context';
+// import { langContext } from '../../context/Context';
 
 const Header = () => {
     // Buttom language
-    const idioma = useContext(langContext);
+    // const idioma = useContext(langContext);
     // Menu desplegable
     const menuDesplegable = () => {
         let navbar = document.querySelector('.navbar');

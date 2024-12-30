@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { ButtomGet } from '../ButtomGet/ButtomGet';
 
 /* Multi idioma */
-import { FormattedMessage } from 'react-intl';
+// import { FormattedMessage } from 'react-intl';
 
 /* Swiper */
 import { Swiper, SwiperSlide } from 'swiper/react';
