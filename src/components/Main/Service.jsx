@@ -13,7 +13,7 @@ const Service = () => {
           <div className="card-header flex justify-center mb-4">
             {/* CodeChef Image */}
             <img 
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Codechef%28new%29_logo.svg/1200px-Codechef%28new%29_logo.svg.png" 
+              src="https://user-images.githubusercontent.com/63710339/185728318-0b976716-4f78-4a0a-a377-1643cc18a57e.png" 
               alt="CodeChef" 
               className="platform-img max-w-full h-32 object-contain" 
             />
