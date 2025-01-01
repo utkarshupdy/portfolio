@@ -55,9 +55,9 @@
 }
 
 /********************** Responsive Design for Mobile **********************/
-@media (max-width: 768px) {
+@media (max-width: 476px) {
     .servicios .row {
-        grid-template-columns: repeat(2, 1fr); /* Two cards per row on smaller screens */
+        grid-template-columns: 1fr; /* One card per row on very small screens */
     }
 
     .servicios .row .columns {
@@ -67,5 +67,34 @@
 
     .servicios .row .columns img {
         height: 120px; /* Smaller images for mobile */
+    }
+}
+
+@media (min-width: 476px) and (max-width: 768px) {
+    .servicios .row {
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row on medium screens */
+    }
+
+    .servicios .row .columns {
+        height: auto; /* Adjust height for medium screens */
+        margin: 10px; /* Reduce margin on smaller screens */
+    }
+
+    .servicios .row .columns img {
+        height: 120px; /* Smaller images for medium screens */
+    }
+}
+
+@media (min-width: 900px) {
+    .servicios .row {
+        grid-template-columns: repeat(4, 1fr); /* Four cards per row on large screens */
+    }
+
+    .servicios .row .columns {
+        height: 300px; /* Maintain the height for larger screens */
+    }
+
+    .servicios .row .columns img {
+        height: 150px; /* Maintain image size for large screens */
     }
 }
