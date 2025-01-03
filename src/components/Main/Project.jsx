@@ -50,6 +50,32 @@ const Project = () => {
                 >
                     <SwiperSlide className='caja'>
                         <img
+                            src={proyectImg(`./query.png`)}
+                            alt='proyectos'
+
+                        />
+                        <div className="content">
+                            <h3>Query Hub</h3>
+                            <p>
+                            QueryHub: Ask, Answer, Explore.
+                            </p>
+                            <p className="tecnologias">
+                                ReactJs
+                                <span> -</span> NextJs
+                                <span> -</span> Zustand
+                                <span> -</span> TypeScript
+                                <span> -</span> Shadcn UI
+                                <span> -</span> Accernity UI
+                                <span> -</span> Tailwind CSS
+                                <span> -</span> Appwrite
+                                <span> -</span> Node Appwrite SDK
+                            </p>
+                            <a href="https://query-hub-two.vercel.app/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
+                            <a href="https://github.com/utkarshupdy/QueryHub" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='caja'>
+                        <img
                             src={proyectImg(`./feedback.png`)}
                             alt='proyectos'
 

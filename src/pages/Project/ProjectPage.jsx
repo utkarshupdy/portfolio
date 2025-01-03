@@ -20,6 +20,7 @@ import { FormattedMessage } from 'react-intl';
 const proyectsImg = require.context('../../img', true);
 
 const Project = () => {
+  const [estadoModal18, cambiarEstadoModal18] = useState(false);
   const [estadoModal17, cambiarEstadoModal17] = useState(false);
   const [estadoModal14, cambiarEstadoModal14] = useState(false);
   const [estadoModal15, cambiarEstadoModal15] = useState(false);
@@ -70,6 +71,11 @@ const Project = () => {
         </section>
 
         <section className="projects__grid paginas-web">
+          <div className="projects__item">
+            <a onClick={() => cambiarEstadoModal18(!estadoModal18)}>
+              <img src={proyectsImg(`./query.png`)} alt="" className="projects__img" />
+            </a>
+          </div>
           <div className="projects__item">
             <a onClick={() => cambiarEstadoModal17(!estadoModal17)}>
               <img src={proyectsImg(`./feedback.png`)} alt="" className="projects__img" />
@@ -143,6 +149,42 @@ const Project = () => {
         </section>
       </main>
 
+      <Modal
+        estado={estadoModal18}
+        cambiarEstado={cambiarEstadoModal18}
+      >
+        <div className="content-modal">
+          <div className="pw-content">
+            <div className="eins-modal-preview"><img src={proyectsImg(`./query.png`)} alt="" /></div>
+            <div className="eins-modal-text">
+            <p>Built a Q&A platform for 100+ users with real-time interactions, boosting community engagement by 35%. Tech stack: Next.js, Node.js, Appwrite, Vercel.</p>
+
+<p>Enhanced user experience and performance, reducing page load times by 25% and increasing active participation by 50%.</p>
+
+              <div className="eins-modal-text-2">
+                <span>Link:</span> <a href="https://query-hub-two.vercel.app/" target="_blank">Click here</a>
+              </div>
+              <div className="eins-modal-text-3">
+                <span>
+                  <FormattedMessage
+                    id='projects-tec'
+                    defaultMessage='Used technology:'
+                  />
+                </span>
+                <div className="eins-modal-tec">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="ReactJS" class="w-8 h-8" />
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg" alt="TypeScript" class="w-8 h-8" />
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-8 h-8" />
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/appwrite/appwrite-original.svg" alt="Appwrite" class="w-8 h-8" />
+
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </Modal>
       <Modal
         estado={estadoModal17}
         cambiarEstado={cambiarEstadoModal17}
