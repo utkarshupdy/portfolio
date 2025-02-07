@@ -20,6 +20,7 @@ import { FormattedMessage } from 'react-intl';
 const proyectsImg = require.context('../../img', true);
 
 const Project = () => {
+  const [estadoModal19, cambiarEstadoModal19] = useState(false);
   const [estadoModal18, cambiarEstadoModal18] = useState(false);
   const [estadoModal17, cambiarEstadoModal17] = useState(false);
   const [estadoModal14, cambiarEstadoModal14] = useState(false);
@@ -71,6 +72,11 @@ const Project = () => {
         </section>
 
         <section className="projects__grid paginas-web">
+          <div className="projects__item">
+            <a onClick={() => cambiarEstadoModal19(!estadoModal19)}>
+              <img src={proyectsImg(`./pixel.png`)} alt="" className="projects__img" />
+            </a>
+          </div>
           <div className="projects__item">
             <a onClick={() => cambiarEstadoModal18(!estadoModal18)}>
               <img src={proyectsImg(`./query.png`)} alt="" className="projects__img" />
@@ -149,6 +155,41 @@ const Project = () => {
         </section>
       </main>
 
+      <Modal
+        estado={estadoModal19}
+        cambiarEstado={cambiarEstadoModal19}
+      >
+        <div className="content-modal">
+          <div className="pw-content">
+            <div className="eins-modal-preview"><img src={proyectsImg(`./pixel.png`)} alt="" /></div>
+            <div className="eins-modal-text">
+            <p>Build a MERN-powered platform handling thousands of transactions with secure Razorpay payments.</p>
+
+<p>Features 99.9% uptime, real-time order tracking, and instant email notifications for a seamless user experience.</p>
+
+              <div className="eins-modal-text-2">
+                <span>Link:</span> <a href="https://pixel-mart-col.vercel.app/" target="_blank">Click here</a>
+              </div>
+              <div className="eins-modal-text-3">
+                <span>
+                  <FormattedMessage
+                    id='projects-tec'
+                    defaultMessage='Used technology:'
+                  />
+                </span>
+                <div className="eins-modal-tec">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="ReactJS" className="w-8 h-8" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg" alt="JavaScript" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-8 h-8" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-8 h-8" />
+</div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </Modal>
       <Modal
         estado={estadoModal18}
         cambiarEstado={cambiarEstadoModal18}

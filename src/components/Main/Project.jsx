@@ -50,6 +50,36 @@ const Project = () => {
                 >
                     <SwiperSlide className='caja'>
                         <img
+                            src={proyectImg(`./pixel.png`)}
+                            alt='proyectos'
+
+                        />
+                        <div className="content">
+                            <h3>Pixel Mart</h3>
+                            <p>
+                            A Scalable Marketplace for Digital Assets
+                            </p>
+                            <p className="tecnologias">
+                                ReactJs
+                                <span> -</span> NextJs
+                                {/* <span> -</span> Zustand */}
+                                <span> -</span> TypeScript
+                                <span> -</span> Daisy / Accernity UI
+                                {/* <span> -</span> Accernity UI */}
+                                <span> -</span> Tailwind CSS
+                                <span> -</span> NodeJs
+                                <span> -</span> ExpressJs
+                                <span> -</span> MongoDB
+                                <span> -</span> RazorPay API/Webhooks
+                                <span> -</span> MailTrap
+                                <span> -</span> MongoDB
+                            </p>
+                            <a href="https://pixel-mart-col.vercel.app/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
+                            <a href="https://github.com/utkarshupdy/PixelMart" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='caja'>
+                        <img
                             src={proyectImg(`./query.png`)}
                             alt='proyectos'
 
