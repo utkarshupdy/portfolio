@@ -1,0 +1,543 @@
+/* Work Experience Page Styles */
+
+.work-experience-container {
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Heatmap Background */
+.heatmap-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/heatmap.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Heatmap Background */
+.heatmap-background2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/lc.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Header Section */
+.header-section {
+  position: relative;
+  z-index: 10;
+  padding: 8rem 1.5rem 4rem;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #fff;
+  background: linear-gradient(135deg, #fff 0%, #e5e7eb 50%, #9ca3af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.1;
+}
+
+.main-subtitle {
+  font-size: 1.5rem;
+  color: #9ca3af;
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Experience Cards Container */
+.experience-cards-container {
+  position: relative;
+  z-index: 10;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.5rem 6rem;
+}
+
+.cards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Experience Card */
+.experience-card {
+  position: relative;
+  background-color: rgba(15, 15, 15, 0.95);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  border: 2px solid rgba(55, 65, 81, 0.3);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+}
+
+.experience-card:hover {
+  border-color: rgba(34, 211, 238, 0.5);
+  box-shadow: 
+    0 25px 50px -12px rgba(34, 211, 238, 0.15),
+    0 0 0 1px rgba(34, 211, 238, 0.1);
+  transform: translateY(-5px);
+}
+
+.card-content {
+  position: relative;
+  z-index: 10;
+  padding: 2.5rem;
+}
+
+/* Card Header */
+.card-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+
+.header-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Company Logo */
+.company-logo {
+  width: 5rem;
+  height: 5rem;
+  background-color: gray;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(55, 65, 81, 0.5);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.experience-card:hover .company-logo {
+  border-color: rgba(34, 211, 238, 0.6);
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.2);
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.75rem;
+}
+
+.logo-fallback {
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(135deg, #22d3ee, #3b82f6);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-initial {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+/* Company Info */
+.company-info {
+  flex: 1;
+}
+
+.company-title-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.company-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.type-badge {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1px solid;
+}
+
+.type-badge.current {
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+  border-color: rgba(34, 197, 94, 0.4);
+}
+
+.type-badge.recent {
+  background-color: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+.type-badge.projects {
+  background-color: rgba(168, 85, 247, 0.2);
+  color: #a855f7;
+  border-color: rgba(168, 85, 247, 0.4);
+}
+
+.position-title {
+  font-size: 1.5rem;
+  color: #22d3ee;
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.3;
+}
+
+.company-description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #d1d5db;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Meta Info */
+.meta-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #9ca3af;
+}
+
+.meta-icon {
+  color: #22d3ee;
+  flex-shrink: 0;
+}
+
+.meta-text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Technologies Section */
+.technologies-section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #22d3ee;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tech-tag {
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(31, 41, 55, 0.6);
+  color: #d1d5db;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(55, 65, 81, 0.5);
+}
+
+.tech-tag:hover {
+  background-color: rgba(34, 211, 238, 0.2);
+  color: #22d3ee;
+  border-color: rgba(34, 211, 238, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Expand Button */
+.expand-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #22d3ee;
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.expand-button:hover {
+  color: #67e8f9;
+  transform: translateX(5px);
+}
+
+/* Achievements Section */
+.achievements-section {
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  max-height: 0;
+  opacity: 0;
+}
+
+.achievements-section.expanded {
+  max-height: 30rem;
+  opacity: 1;
+}
+
+.achievements-content {
+  border-top: 2px solid rgba(31, 41, 55, 0.5);
+  padding-top: 2rem;
+}
+
+.achievements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.achievement-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #22d3ee, #3b82f6);
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.3);
+}
+
+.achievement-text {
+  color: #d1d5db;
+  line-height: 1.7;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Hover Effect */
+.hover-effect {
+  position: absolute;
+  inset: 0;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.03), rgba(59, 130, 246, 0.03));
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.experience-card:hover .hover-effect {
+  opacity: 1;
+}
+
+/* Call to Action */
+.cta-section {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 2.5rem;
+  background: transparent;
+  border: 2px solid #22d3ee;
+  border-radius: 3rem;
+  color: #22d3ee;
+  font-weight: 600;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #22d3ee;
+  color: #000;
+  box-shadow: 0 10px 30px rgba(34, 211, 238, 0.3);
+  transform: translateY(-3px);
+}
+
+.cta-icon {
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover .cta-icon {
+  transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (min-width: 1024px) {
+  .main-title {
+    font-size: 5rem;
+  }
+  
+  .main-subtitle {
+    font-size: 1.75rem;
+  }
+  
+  .card-header {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .header-main {
+    margin-bottom: 0;
+    flex: 1;
+  }
+  
+  .meta-info {
+    margin-left: 2rem;
+    align-self: flex-start;
+  }
+  
+  .company-name {
+    font-size: 2.25rem;
+  }
+  
+  .position-title {
+    font-size: 1.75rem;
+  }
+  
+  .company-description {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-section {
+    padding: 5rem 1rem 3rem;
+  }
+  
+  .main-title {
+    font-size: 3rem;
+  }
+  
+  .main-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .card-content {
+    padding: 2rem;
+  }
+  
+  .header-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .company-info {
+    text-align: center;
+  }
+  
+  .company-title-row {
+    justify-content: center;
+  }
+  
+  .company-name {
+    font-size: 1.75rem;
+  }
+  
+  .position-title {
+    font-size: 1.25rem;
+  }
+  
+  .company-description {
+    font-size: 1rem;
+  }
+  
+  .meta-info {
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-section {
+    padding: 4rem 0.75rem 2rem;
+  }
+  
+  .main-title {
+    font-size: 2.5rem;
+  }
+  
+  .main-subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  .company-logo {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  .tech-tags {
+    gap: 0.5rem;
+  }
+  
+  .tech-tag {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}

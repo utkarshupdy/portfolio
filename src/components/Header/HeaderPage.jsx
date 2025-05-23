@@ -49,6 +49,12 @@ const HeaderPage = () => {
                         defaultMessage='About me'
                     />
                 </NavLink>
+                <NavLink to="/exp" offset={-150} duration={500}>
+                    <FormattedMessage
+                        id='experience'
+                        defaultMessage='Work Experience'
+                    />
+                </NavLink>
                 <NavLink to="/project" offset={-150} duration={500}>
                     <FormattedMessage
                         id='projects'

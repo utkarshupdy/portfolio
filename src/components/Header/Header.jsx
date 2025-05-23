@@ -56,6 +56,12 @@ const Header = () => {
                 <Link to="servicios" spy={true} offset={-150} href="#servicios">
                     Coding Profiles
                 </Link>
+                <NavLink to="/exp">
+                    <FormattedMessage
+                        id='experience'
+                        defaultMessage='Work Experience'
+                    />
+                </NavLink>
                 <Link to="proyectos" spy={true} offset={-150} href="#proyectos">
                     <FormattedMessage
                         id='projects'

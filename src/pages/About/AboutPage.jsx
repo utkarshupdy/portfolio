@@ -32,6 +32,9 @@ const About = () => {
     <div>
       <HeaderPage />
       <ParticleBackground />
+      <div className="heatmap-background">
+        <img src="./public/heatmap.png" alt="Heatmap Background" />
+      </div>
 
       <main>
         <section className="sobre-mi-seccion" id="sobre-mi">

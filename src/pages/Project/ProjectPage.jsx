@@ -43,6 +43,9 @@ const Project = () => {
       <HeaderPage />
 
       <ParticleBackground />
+      <div className="heatmap-background2">
+        <img src="./public/lc.png" alt="Heatmap Background" />
+      </div>
 
       <main>
         <section className="proyectos mas-proyect" id="proyectos">
